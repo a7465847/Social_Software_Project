@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Fake User List</title>
+  </head>
+  <body >
+   <!-- 導覽列 -->
+   <nav class="navbar img-fluid p-0 " alt="movie-poster">
+    <div class="d-flex align-items-center align-self-center pl-2">
+      <img src='https://i.postimg.cc/HsNB0ynz/100258.png' class="Logo rounded float-left " alt="...">
+      <h1>
+        <span>M</span><span>E</span><span>E</span><span>T</span><span>S</span>
+        </br>
+        <span>L</span><span>O</span><span>V</span><span>E</span>
+      </h1>
+    </div>
+    <div>
+      <div class="navbarAllBtn d-flex justify-content-end ">
+        <div>
+          <a href="./index.html"><button type="button" class="btn btn-secondary m-3">首頁<i class="fas fa-home pl-2"></i></i></button></a>
+        </div>
+        <div>
+          <a href="./favorite.html"><button type="button" class="btn btn-secondary m-3">Favorite<i class="fab fa-gratipay pl-2"></i></button></a>
+        </div>
+        <div class="multi-button p-2 m-2">
+          <button>登入</button>
+          <button>註冊</button>
+          <button><li class="fas fa-bell"></li></button>
+          <button><li class="fas fa-comment-dots"></li></button>
+          <button><li class="far fa-user-circle"></li></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div class=" mt-5 ">
+  <div class=" d-flex justify-content-around flex-wrap" id="data-panel">
+    <!-- Render user List -->
+  </div>
+</div>
+
+<!-- Movie Modal -->
+<div class="modal fade" id="users-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="users-modal-title">---</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="movie-modal-body">
+        <div class="row">
+          <div class="col-sm-4" id="users-modal-image">
+            <img src="" alt="" class="">
+          </div>
+          <div class="col-sm-8">
+            <p id="users-modal-email"></p>
+            <p id="users-modal-gender"></p>
+            <p id="users-modal-age"></p>
+            <p id="users-modal-region"></p>
+            <p id="users-modal-birthday"></p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="favorite.js"></script>
+  </body>
+</html>
